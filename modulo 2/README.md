@@ -3,168 +3,160 @@
         <img src="assets/Yasmim Lima.png" alt="Banner do Módulo 2 - Fundamentos de Controle de Versão">
     </div>
 </div>
+# Módulo 2 - Introdução à Programação
 
-# Módulo 5 - Fundamentos de Controle de Versão
-
-Anotações da aula sobre terminal, bash e controle de versão com Git. Instrutor: Luis Henrique (Luisinho), Data Engineer Manager na Indicium.
+Anotações da aula sobre os fundamentos de programação. Instrutora: Yasmim Lima (Data Engineer na Indicium).
 
 ## O que aprendi
 
-**O que é um terminal**
+**Como o computador funciona**
 
-Antigamente a entrada de dados de um computador era feita por um Terminal de verdade: só um monitor e um teclado, ligados a uma máquina mais robusta que processava tudo. Era por ali que se acessava o sistema e navegava nos diretórios digitando comando em vez de clicar com o mouse.
+O computador basicamente executa tarefas lógicas e matemáticas, guarda e busca dados na memória, e faz tudo isso em operações bem simples (baixo nível). No fundo é tudo matemática.
 
-Hoje, quando eu abro o "Terminal" no meu computador, na real eu tô abrindo um programa que **emula** essa máquina antiga. Existem vários desses programas, o sistema operacional já vem com um, mas dá pra instalar outro se eu quiser.
+A parte mais louca é que ele só entende **0 e 1** (ligado/desligado). Todo vídeo, imagem, texto que a gente vê é traduzido pra uma sequência gigante de 0s e 1s.
 
-**Shell**
+**Quem inventou tudo isso**
 
-O Shell é o programa que faz a ponte entre eu (usuário) e o núcleo do sistema operacional. É ele quem interpreta o comando que eu digito e manda pro Kernel executar.
+- Ada Lovelace foi a primeira programadora da história
+- Alan Turing criou o conceito das Máquinas de Turing
+- John Von Neumann criou a arquitetura de computador com memória (a que usamos até hoje)
 
-Fluxo que ficou mais claro pra mim:
-```
-Programa que emula terminal ($ ls) → Shell (interpreta o comando) → Kernel → Hardware
-```
+**O que é um algoritmo**
 
-Tem dois tipos de shell:
-- **CLI** (Command Line Interface) → baseado em linha de comando, preciso digitar tudo
-- **GUI** (Graphical User Interface) → interface gráfica, tipo o Windows Explorer
+É simplesmente uma sequência de passos lógicos pra resolver um problema. A professora deu o exemplo de uma receita de bolo ou de como trocar um pneu — no fundo é a mesma lógica de um programa.
 
-E no Linux o shell mais usado é o **BASH** (Bourne Again Shell), que é o padrão de login na maioria das distros (dá pra instalar no Windows também). No Windows já vem o Powershell e o Command Line.
+**Por que a gente vai aprender Python**
 
-## Comandos básicos de terminal
+- Sintaxe parecida com inglês, mais fácil de ler
+- Não fica cheio de `{}` e `;` toda hora como outras linguagens
+- É a linguagem mais usada em IA e Ciência de Dados hoje em dia
 
-Separei os comandos que testei em aula:
-
-```bash
-pwd                     # mostra o diretório atual
-ls -a                   # lista tudo, incluindo ocultos
-ls --help               # ajuda do comando
-cd meu_projeto          # navega entre diretórios
-mkdir meu_projeto       # cria um diretório novo
-rmdir pasta_vazia       # remove diretório vazio e seguro
-rm arquivo.txt          # remove arquivo (cuidado, é permanente)
-rm -r pasta_com_arquivos # remove pasta que tem arquivo dentro
-cp origem.txt copia.txt # copia arquivo
-mv antigo.txt novo.txt  # move ou renomeia
-cat arquivo.txt         # mostra o conteúdo do arquivo
-less arquivo.txt        # mostra com paginação (Q pra sair)
-grep "termo" arquivo.txt # filtra conteúdo com regex
-echo $nome              # exibe texto ou variável
-sudo apt-get install x  # instala pacote como superusuário
-curl -X GET "https://api.bcb.gov.br/dados/serie/bcdata.sgs.10813/dados?formato=json"
-ps                       # processos em execução
-kill 1234                # mata processo pelo ID
-history                  # histórico de comandos
+```python
+print("Hello World!")
 ```
 
-Também existem `chmod` (mexer em permissão) e `chown` (mudar dono do arquivo), mas não usei tanto em aula.
+## Variáveis
 
-## Controle de versão — de onde veio o Git
+Pensei nelas como etiquetas/caixinhas que guardam um valor na memória RAM. Quando eu mudo o valor, ele não desaparece, só é substituído por um novo.
 
-Isso eu não sabia: o Git foi criado em **2005** pelo Linus Torvalds, o mesmo cara que criou o kernel do Linux. Antes disso a comunidade do kernel usava o **BitKeeper** como sistema de controle de versão, mas rolou um rompimento de relações e o Linus resolveu criar o próprio sistema, usando a experiência que teve com o BitKeeper.
-
-As metas dele eram: velocidade, suporte a desenvolvimento não-linear, ser distribuído e conseguir lidar com projetos grandes de forma eficiente. Hoje o Git é o sistema de controle de versão mais usado do mundo.
-
-## Termos que preciso lembrar
-
-- **Repositório** → diretório onde ficam os arquivos do projeto (código, imagem, o que for). Pode ser local (na minha máquina) ou remoto (GitHub, GitLab, Bitbucket, Azure DevOps).
-- **Branch** → uma ramificação do código. Serve pra eu desenvolver uma feature sem mexer direto na versão que já tá funcionando em produção.
-- **Commit** → um conjunto de alterações salvo, com autor, mensagem e um hash único. É esse hash que deixa eu voltar pra um ponto específico do histórico.
-- **Pull Request** → o pedido que eu faço pro dono do repositório aceitar minhas alterações no projeto oficial.
-- **Clone** → cópia local de um repositório remoto, pra eu trabalhar nele e depois mandar as alterações de volta.
-- **Fork** → um repositório novo, independente, que copia o "upstream" original. Usado quando não tenho permissão de escrita no projeto original (comum em open source).
-
-## GitFlow
-
-O modelo de branches que a aula usou como referência:
-
-- `main` → versão estável, em produção
-- `develop` → onde as features vão sendo integradas
-- `feature/*` → desenvolvimento de funcionalidade nova
-- `release/*` → preparação de uma versão
-- `hotfix/*` → correção urgente aplicada direto em cima da `main`
-
-## Como o repositório local conversa com o remoto
-
-```
-Workspace → Index/Staging → Local Repository → Remote Repository
+```python
+nome = "Alan Turing"   # string (texto)
+idade = 53              # int (número inteiro)
+altura = 1.80            # float (número com decimal)
 ```
 
-- `git init` / `git clone` inicializam o repositório
-- `git pull` / `git fetch` trazem o que mudou no remoto
-- `git add` / `git commit` registram mudança localmente
-- `git push` manda o commit local pro remoto
-- `git checkout` / `git diff` navegam e comparam versões
+## If / Else (lógica de decisão)
 
-## Comandos de Git que testei
+O computador só faz uma coisa se a condição for verdadeira, senão ele faz outra.
 
-Separei tudo num roteiro pra praticar em [`comandos-git-hands-on.sh`](./comandos-git-hands-on.sh). Aqui vai o resumo:
-
-**Configuração e conexão**
-```bash
-git init                          # inicializa o repositório
-git remote -v                     # lista os remotos vinculados
-git remote add origin <url>       # adiciona um remoto
-git remote remove origin          # remove um remoto
-git clone <url>                   # clona um repositório existente
+```python
+if chuva == True:
+    print("levar guarda chuvas")
+else:  # ou if chuva == False:
+    print("sair de boa")
 ```
 
-**Branches**
-```bash
-git branch                # lista as branches
-git branch feature/login  # cria uma branch
-git branch -D feature/login # apaga uma branch
-git branch -m novo-nome   # renomeia a branch atual
-git checkout feature/login   # muda pra branch
-git checkout -b feature/login # cria e já muda pra branch
+## For e While (loops)
+
+Serve pra repetir uma ação sem precisar escrever ela um monte de vezes. A ideia é: "deixa o tédio pra máquina".
+
+```python
+num = int(input("Digite um número para ver a tabuada: "))
+print(f"Tabuada do {num}:")
+
+# usando for
+for i in range(1, 11):
+    resultado = num * i
+    print(f"{num} x {i} = {resultado}")
+
+# usando while (mesma coisa, jeito diferente)
+i = 1
+while i != 11:
+    resultado = num * i
+    print(f"{num} x {i} = {resultado}")
+    i = i + 1
 ```
 
-**Alterações**
-```bash
-git status                 # o que mudou
-git add arquivo.txt        # manda arquivo pra staging area
-git add .                  # manda tudo pra staging area
-git reset                  # volta staging pro último commit (--hard reseta workspace também, cuidado)
-git revert <hash>          # desfaz um commit criando outro commit (bom pra histórico remoto/público)
-git restore arquivo.txt    # descarta alteração não commitada
-git diff                   # diferença entre workspace e staging
+## Funções
+
+A ideia é não ficar repetindo código (isso tem até nome: princípio **DRY** - Don't Repeat Yourself). Eu junto um bloco de código dentro de uma função com nome, e só chamo ela quando precisar.
+
+Exemplo que ficou bem claro: uma função de fazer café, onde entram os ingredientes e sai o café pronto.
+
+```python
+def fazer_cafe(tipo_cafe, quantidade_agua, acucar):
+    print(f"Aquecendo {quantidade_agua}ml de água")
+    print(f"Adicionando {tipo_cafe}")
+    print(f"Adicionando {acucar} colheres de açúcar")
+    print("Café pronto!")
+
+fazer_cafe("café expresso", 50, 1)
+fazer_cafe("café coado", 200, 2)
 ```
 
-**Commit e histórico**
-```bash
-git commit -m "mensagem"       # cria o commit
-git commit -a -m "mensagem"    # pula o add, mas só funciona pra arquivo já rastreado
-git log                        # histórico de commits
-git log --oneline              # histórico resumido
-git shortlog                   # histórico agrupado por autor
-git reflog                     # histórico de ações no repositório
+## Indentação
+
+Isso é uma coisa que preciso lembrar sempre: em Python o espaço/tab no início da linha **não é estética**, ele define o que está dentro de cada bloco de código. Se eu errar a indentação, o código quebra ou funciona errado.
+
+## Declarativo x Imperativo
+
+- **Declarativo** (ex: SQL): eu digo o que eu quero, o computador decide como buscar
+- **Imperativo** (ex: Python): eu descrevo passo a passo o que ele deve fazer
+
+```sql
+-- eu só digo o que quero
+select nome from clientes where idade > 18
 ```
 
-**Sincronização**
-```bash
-git push -u origin feature/login  # manda a branch pro remoto
-git pull origin main               # traz o que mudou na main
+```python
+# aqui eu descrevo o passo a passo
+clientes_maiores = []
+for cliente in clientes:
+    if cliente["idade"] > 18:
+        clientes_maiores.append(cliente["nome"])
 ```
 
-## .gitignore
+## Compilador x Interpretador
 
-Arquivo simples que diz pro Git quais arquivos/pastas ele nunca deve versionar. Motivos pra usar:
+- **Compilador**: traduz o código inteiro de uma vez antes de rodar (tipo traduzir um livro inteiro). Exemplos: C, C++, Rust
+- **Interpretador**: vai traduzindo linha por linha enquanto roda (tradução simultânea). Exemplos: Python, JavaScript (Python usa esse)
 
-- **Segurança** → não deixa subir senha, chave de API, `.env`
-- **Limpeza** → não polui o repositório com pasta de biblioteca tipo `venv/` ou `node_modules/`
-- **Performance** → só o código essencial é versionado, deixando `push`/`pull` mais rápido
+## Jogos pra praticar (indicados na aula)
+- The Farmer Was Replaced
+- Turing Complete
+- While True: Learn()
+- Joy of Programming
 
-Deixei um exemplo pronto em [`.gitignore.example`](./.gitignore.example) (é só renomear pra `.gitignore` na raiz do projeto).
+## Dicas que a Yasmim deu pra continuar evoluindo
 
-## Pra lembrar depois
-- Terminal hoje é um programa que emula a máquina antiga; Shell é quem faz a ponte com o Kernel
-- BASH é o shell padrão do Linux, Powershell/CMD é do Windows
-- O Git nasceu em 2005 por causa do rompimento com o BitKeeper
-- Branch ramifica o código, commit salva o estado, pull request pede pra integrar
-- Fluxo local: Workspace → Staging → Local Repository → Remote Repository
-- `.gitignore` é essencial pra não subir segredo nem lixo pro repositório
-- Rodar `git status` sempre antes de commitar evita surpresa
+1. **Praticar sempre** — é que nem tocar um instrumento, quanto mais eu pratico mais natural fica. Ela indicou HackerRank, LeetCode e DataLemur pra treinar.
+2. **Resolver problemas do meu dia a dia** — tipo automatizar alguma tarefa chata, calcular gastos, ou resolver algo que eu já preciso resolver de verdade.
+3. **Usar IA pra aprender, não pra pensar por mim** — posso usar pra entender conceito ou revisar código, mas o raciocínio tem que ser meu. Dica dela: usar o NotebookLM ou tentar explicar pra IA o que eu aprendi.
 
-## Referências
-- [Learn Git Branching](https://learngitbranching.js.org/) — simulador interativo pra praticar Git
-- [Documentação oficial do Git](https://git-scm.com/doc)
+## Exemplos que fiz
+Separei os códigos dessa aula na pasta [`exemplos/`](./exemplos):
+- `variaveis.py`
+- `condicional.py`
+- `loops.py`
+- `funcoes.py`
+
+## Desafio que fiz misturando os conceitos
+
+A professora passou um desafio pra misturar `input`, f-string e `if/elif/else`: pedir nome, cidade e idade da pessoa, e verificar se ela pode entrar numa montanha-russa (com base na idade).
+
+Ficou assim: [`desafio_montanha_russa.py`](./exemplos/desafio_montanha_russa.py)
+
+```python
+nome = input('Digite seu nome: ')
+cidade = input('Em qual cidade você mora? ')
+print(f'bem-vindo {nome} de {cidade}, obrigado por visitar a montanha-russa radical')
+
+idade = input("Qual sua idade? ")
+idade = int(idade)
+if idade < 17:
+    print("Você não pode entrar na montanha-russa.")
+elif idade == 17:
+    print("falta um pouco para crescer e entrar na montanha-russa.")
+else:
+    print("Você pode entrar na montanha-russa.")
+```
