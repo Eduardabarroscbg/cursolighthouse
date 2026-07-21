@@ -1,3 +1,10 @@
+<div class="hero-image">
+    <div class="frame">
+        <img src="assets/corinabachman.png" alt="Banner do Módulo 3 - Introdução à SQL">
+    </div>
+</div>
+
+
 # Módulo 3 - Introdução à SQL
 
 Anotações da aula sobre os fundamentos de SQL. Instrutora: Corina Bachmann (Team Lead Analytics Engineer na Indicium).
