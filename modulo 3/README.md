@@ -189,4 +189,3 @@ order by Category.CategoryName;
 - Texto/data usa aspas simples, número não usa
 - `JOIN` combina colunas, `UNION` empilha linhas
 - Nem todo banco de dados suporta `FULL JOIN`
-- Ferramenta usada nos exercícios: [DBeaver](https://dbeaver.io/) — primeira vez usando, achei bem legal
