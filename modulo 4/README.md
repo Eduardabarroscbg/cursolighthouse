@@ -220,9 +220,6 @@ Separei os códigos por aula:
 - [`classes.py`](./aula%201/classes.py) — herança com `Mamifero`, `Humano` e `Cachorro`
 - [`encapsulation.py`](./aula%201/encapsulation.py) — encapsulamento com `BankAccount`
 - [`polymorphism.py`](./aula%201/polymorphism.py) — polimorfismo com `Animal` e `Dog`
-- `exemplo_tap_launch.json` — não é exercício, é um exemplo de config do VSCode (`launch.json`) que sobrou na pasta
-
-> ⚠️ Se você tiver as pastas `0.loops/`, `1.args_kwargs/`, `2-4.funcs_and_mods/`, `3.arg_order/`, `5.packages/`, `6.pandas_exercises/`, `7.classes/` e `8.oop/` dentro de `aula 1`, pode apagar — os arquivos já estão soltos direto na raiz da pasta, e essas subpastas ficam duplicando o mesmo conteúdo.
 
 **Aula 2** — pasta [`aula 2`](./aula%202)
 
