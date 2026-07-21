@@ -59,6 +59,37 @@ history                  # histórico de comandos
 
 Também existem `chmod` (mexer em permissão) e `chown` (mudar dono do arquivo), mas não usei tanto em aula.
 
+## Protocolos Telnet e SSH
+
+Isso apareceu num vídeo complementar, mas fez sentido deixar anotado aqui perto do terminal, já que os dois servem pra acessar e administrar um computador remotamente (modelo cliente-servidor), criando o que se chama de **terminal virtual**: eu opero por aqui, mas o comando roda de verdade lá no computador remoto.
+
+**Telnet**
+- Permite conexão e administração remota
+- Cria o terminal virtual, mas **sem criptografia**
+- Por não criptografar, é vulnerável a roubo de informação se a conexão for interceptada
+- Usa a porta TCP **23**
+
+**SSH (Secure Shell)**
+- Faz basicamente a mesma coisa que o Telnet (conexão e administração remota)
+- A diferença é que é um **protocolo criptográfico**, então a transmissão é segura e confidencial
+- Por isso é considerado o substituto seguro do Telnet
+- Usa a porta TCP **22**
+
+| Protocolo | Porta TCP | Criptografado |
+|---|---|---|
+| Telnet | 23 | Não |
+| SSH | 22 | Sim |
+
+## RAM vs Disco Rígido (HD)
+
+Analogia que vi num vídeo e ajudou a fixar: os arquivos/programas são como livros, a **mesa de trabalho** é a memória RAM e a **estante** é o disco rígido.
+
+- **Disco rígido (HD/SSD)** → armazenamento de longo prazo. Guarda tudo: programas instalados, fotos, textos, arquivos. Mantém os dados mesmo com o computador desligado.
+- **Memória RAM** → guarda só o que estou usando *agora*, é como uma cópia temporária do que está no disco, trazida pra "mesa" pra eu trabalhar. Precisa de energia constante: quando desliga o computador, o conteúdo da RAM some.
+- A RAM é muito mais rápida que o disco pra ler e escrever dados — por isso reiniciar o computador (limpar a "mesa") costuma melhorar a lentidão.
+- Quanto mais RAM, mais programas/arquivos dá pra manter abertos ao mesmo tempo (mesa maior).
+- Existem dois tipos principais de disco rígido: os **magnéticos** (mais antigos, mais lentos, mais baratos) e os **SSD** (tecnologia parecida com pendrive, bem mais rápidos e mais caros).
+
 ## Controle de versão — de onde veio o Git
 
 Isso eu não sabia: o Git foi criado em **2005** pelo Linus Torvalds, o mesmo cara que criou o kernel do Linux. Antes disso a comunidade do kernel usava o **BitKeeper** como sistema de controle de versão, mas rolou um rompimento de relações e o Linus resolveu criar o próprio sistema, usando a experiência que teve com o BitKeeper.
@@ -159,6 +190,8 @@ Deixei um exemplo pronto em [`.gitignore.example`](./.gitignore.example) (é só
 ## Pra lembrar depois
 - Terminal hoje é um programa que emula a máquina antiga; Shell é quem faz a ponte com o Kernel
 - BASH é o shell padrão do Linux, Powershell/CMD é do Windows
+- Telnet (porta 23) não criptografa; SSH (porta 22) criptografa — por isso SSH substituiu o Telnet
+- RAM guarda o que tá em uso agora e some ao desligar; disco rígido guarda tudo por longo prazo, mesmo sem energia
 - O Git nasceu em 2005 por causa do rompimento com o BitKeeper
 - Branch ramifica o código, commit salva o estado, pull request pede pra integrar
 - Fluxo local: Workspace → Staging → Local Repository → Remote Repository
