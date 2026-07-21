@@ -135,7 +135,7 @@ for cliente in clientes:
 3. **Usar IA pra aprender, não pra pensar por mim** — posso usar pra entender conceito ou revisar código, mas o raciocínio tem que ser meu. Dica dela: usar o NotebookLM ou tentar explicar pra IA o que eu aprendi.
 
 ## Exemplos que fiz
-Separei os códigos dessa aula na pasta [`exemplos/`](./exemplos):
+Separei os códigos dessa aula:
 - `variaveis.py`
 - `condicional.py`
 - `loops.py`
