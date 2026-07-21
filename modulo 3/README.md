@@ -9,6 +9,10 @@
 
 Anotações da aula sobre os fundamentos de SQL. Instrutora: Corina Bachmann (Team Lead Analytics Engineer na Indicium).
 
+## Ferramenta usada
+
+Pra rodar as queries eu usei o [DBeaver](https://dbeaver.io/), conectado ao banco [Northwind em SQLite](./Northwind_small.sqlite). Nunca tinha usado essa ferramenta antes e achei bem legal — é bem intuitiva pra explorar as tabelas, ver a estrutura do banco e rodar os scripts direto na interface.
+
 ## O que aprendi
 
 **O que é SQL**
@@ -143,7 +147,7 @@ LIMIT número_de_linhas
 
 ## Exercícios que fiz
 
-A aula usou o banco **Northwind** (importadora fictícia de alimentos) com um cenário de onboarding: eu como analista júnior precisando responder perguntas da CEO. Separei minhas queries em [`script.sql`](./script.sql).
+A aula usou o banco **Northwind** (importadora fictícia de alimentos) com um cenário **fictício** de onboarding, proposto pela instrutora: eu como analista júnior precisando responder perguntas de uma CEO (que não existe de verdade, é só pra simular uma situação real de trabalho). Os exercícios foram feitos junto com a instrutora, durante a aula. Separei minhas queries em [`script.sql`](./script.sql).
 
 **Task A** — nome e preço de todos os produtos:
 ```sql
@@ -185,3 +189,4 @@ order by Category.CategoryName;
 - Texto/data usa aspas simples, número não usa
 - `JOIN` combina colunas, `UNION` empilha linhas
 - Nem todo banco de dados suporta `FULL JOIN`
+- Ferramenta usada nos exercícios: [DBeaver](https://dbeaver.io/) — primeira vez usando, achei bem legal
