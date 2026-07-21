@@ -4,7 +4,6 @@
     </div>
 </div>
 
-
 # Módulo 3 - Introdução à SQL
 
 Anotações da aula sobre os fundamentos de SQL. Instrutora: Corina Bachmann (Team Lead Analytics Engineer na Indicium).
