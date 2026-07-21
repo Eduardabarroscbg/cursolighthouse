@@ -203,7 +203,7 @@ Vimos também conceitos de orientação a objetos:
 - Versionamento (Git)
 - Aproximação ao ambiente de produção
 
-## Exercícios que fiz
+## Exercícios que fez
 
 Separei os códigos por aula:
 
