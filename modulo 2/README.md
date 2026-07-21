@@ -3,6 +3,7 @@
         <img src="assets/Yasmim Lima.png" alt="Banner do Módulo 2 - Fundamentos de Controle de Versão">
     </div>
 </div>
+
 # Módulo 2 - Introdução à Programação
 
 Anotações da aula sobre os fundamentos de programação. Instrutora: Yasmim Lima (Data Engineer na Indicium).
