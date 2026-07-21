@@ -1,6 +1,6 @@
 <div class="hero-image">
     <div class="frame">
-        <img src="assets/corinabachman.png" alt="Banner do Módulo 3 - Introdução à SQL">
+        <img src="assets/corinabachmann.png" alt="Banner do Módulo 3 - Introdução à SQL">
     </div>
 </div>
 
