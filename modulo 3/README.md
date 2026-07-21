@@ -180,22 +180,6 @@ on Product.CategoryId = Category.Id
 order by Category.CategoryName;
 ```
 
-## Desafio final: top 3 categorias que mais geraram receita
-
-Esse foi o exercício que juntou tudo (`JOIN` duplo + `GROUP BY` + `ORDER BY` + `LIMIT`), achei o mais desafiador da aula:
-
-```sql
-select c.CategoryName, sum(od.UnitPrice * od.Quantity) as valorTotal
-from OrderDetail od
-inner join Product p
-on od.ProductId = p.Id
-inner join Category c
-on p.CategoryId = c.Id
-group by c.CategoryName
-order by valorTotal desc
-limit 3;
-```
-
 ## Pra lembrar depois
 - A ordem das cláusulas SQL importa (`SELECT` → `FROM` → `JOIN` → `WHERE` → `GROUP BY` → `HAVING` → `ORDER BY` → `LIMIT`)
 - Texto/data usa aspas simples, número não usa
