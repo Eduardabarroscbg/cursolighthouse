@@ -20,12 +20,6 @@ A parte mais louca é que ele só entende **0 e 1** (ligado/desligado). Todo ví
 
 É simplesmente uma sequência de passos lógicos pra resolver um problema. A professora deu o exemplo de uma receita de bolo ou de como trocar um pneu — no fundo é a mesma lógica de um programa.
 
-**Por que a gente vai aprender Python**
-
-- Sintaxe parecida com inglês, mais fácil de ler
-- Não fica cheio de `{}` e `;` toda hora como outras linguagens
-- É a linguagem mais usada em IA e Ciência de Dados hoje em dia
-
 ```python
 print("Hello World!")
 ```
@@ -121,12 +115,6 @@ for cliente in clientes:
 - Turing Complete
 - While True: Learn()
 - Joy of Programming
-
-## Dicas que a Yasmim deu pra continuar evoluindo
-
-1. **Praticar sempre** — é que nem tocar um instrumento, quanto mais eu pratico mais natural fica. Ela indicou HackerRank, LeetCode e DataLemur pra treinar.
-2. **Resolver problemas do meu dia a dia** — tipo automatizar alguma tarefa chata, calcular gastos, ou resolver algo que eu já preciso resolver de verdade.
-3. **Usar IA pra aprender, não pra pensar por mim** — posso usar pra entender conceito ou revisar código, mas o raciocínio tem que ser meu. Dica dela: usar o NotebookLM ou tentar explicar pra IA o que eu aprendi.
 
 ## Exemplos que fiz
 Separei os códigos dessa aula na pasta [`exemplos/`](./exemplos):
