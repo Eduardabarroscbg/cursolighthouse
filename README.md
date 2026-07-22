@@ -10,7 +10,7 @@ Esse repositório reúne minhas anotações e exercícios das aulas do **Ciclo P
 
 Cada pasta desse repositório corresponde a um módulo do Ciclo Preparatório, com as anotações que fiz durante a aula, os exercícios praticados e os arquivos de apoio que usei.
 
-> O Módulo 0 foi sobre configuração de ambiente e o Módulo 1 foi a apresentação do programa em si, então não tem anotações de conteúdo técnico — comecei a documentar a partir do Módulo 2. A ideia é ir atualizando esse repositório até o Módulo 10, conforme as aulas forem acontecendo.
+> O Módulo 0 e o Módulo 1 foi a apresentação do programa em si, então não tem anotações — comecei a documentar a partir do Módulo 2. A ideia é ir atualizando esse repositório até o Módulo 10, conforme as aulas forem acontecendo.
 
 ## Módulos
 
