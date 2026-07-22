@@ -6,7 +6,7 @@
 
 # Módulo 4 - Introdução a Python
 
-Anotações da aula sobre os fundamentos de Python (recapitulação, funções, módulos, Pandas, debugging, classes e organização de projetos). Instrutor: Duarte Junior (AI Engineer na Indicium).
+Anotações das duas aulas de introdução a Python (recapitulação, funções, pseudocódigo, módulos, Pandas, debugging, classes e organização de projetos). Instrutor: Duarte Junior (AI Engineer na Indicium).
 
 ## Ferramenta usada
 
@@ -24,7 +24,9 @@ python -m venv venv
 pip install pandas
 ```
 
-## O que aprendi
+---
+
+## Aula 1 — O que aprendi
 
 **O que é Python**
 
@@ -89,8 +91,6 @@ else:
 
 Loops: `for i in iterable`, `for i in range(start, stop, step)`, `for key, value in my_dict.items()`, `enumerate()` e `while` (com `continue` e `break`).
 
-## Funções e pseudocódigo
-
 **Funções**
 
 ```python
@@ -106,9 +106,24 @@ my_func(args)  # não esquecer de chamar a função!
 
 **Pseudocódigo**
 
-É a linha de raciocínio que serve de base pro código antes de escrever a função de fato. Ajuda a organizar a lógica e se acostumar a pensar como a linguagem antes de programar. Fiz um exercício de "verificador de idade" com essa lógica (arquivo [`pseudocodigo.py`](./aula%201/pseudocodigo.py)).
+É a linha de raciocínio que serve de base pro código antes de escrever a função de fato. Ajuda a organizar a lógica e se acostumar a pensar como a linguagem antes de programar. Útil pra organizar a lógica, se acostumar a pensar como a linguagem e é ideal pra quem tá começando.
 
-## Módulos e Pacotes
+### Exercícios da Aula 1
+
+Pasta [`aula 1`](./aula%201):
+
+- [`pseudocodigo.py`](./aula%201/pseudocodigo.py) — exercício prático proposto: verificador de idade a partir de pseudocódigo
+- [`loop_em_batches.py`](./aula%201/loop_em_batches.py) — percorrer uma lista em lotes (batches)
+- [`args_kwargs.py`](./aula%201/args_kwargs.py) — funções com `*args` e `**kwargs`
+- [`arg_order.py`](./aula%201/arg_order.py) — ordem de argumentos posicionais vs nomeados
+
+> `exemplo_tap_launch.json` — não é exercício, é um exemplo de config do VSCode (`launch.json`) que sobrou na pasta.
+
+---
+
+## Aula 2 — O que aprendi
+
+**Módulos e Pacotes**
 
 - **Módulos**: arquivos `.py` que contêm funções pra incluir em outras aplicações.
 - **Pacotes**: diretórios com múltiplos módulos ou subpacotes.
@@ -116,7 +131,7 @@ my_func(args)  # não esquecer de chamar a função!
   - Externos: `pandas`, `numpy`, `requests`...
 - **Venvs**: ambientes virtuais onde instalamos os pacotes de uma aplicação, sem afetar a máquina toda.
 
-## Introdução a Pandas
+**Introdução a Pandas**
 
 Definição oficial: *pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.*
 
@@ -134,7 +149,7 @@ Definição oficial: *pandas is a fast, powerful, flexible and easy to use open 
 
 💡 Dica que o instrutor reforçou: antes de manipular os dados, sempre fazer uma leitura inicial pra entender o formato e evitar erro.
 
-## Operações com Pandas (o "SQL do Python")
+**Operações com Pandas (o "SQL do Python")**
 
 Uma tabela comparativa que ajudou muito a entender Pandas por analogia com SQL:
 
@@ -157,7 +172,7 @@ Uma tabela comparativa que ajudou muito a entender Pandas por analogia com SQL:
 | `UPDATE` | `df.loc[condition, 'col'] = new_value` |
 | `DELETE FROM table WHERE ...` | `df = df[~condition]` |
 
-## Pandas x Polars x Pyspark
+**Pandas x Polars x Pyspark**
 
 Ficou claro que a escolha depende do tamanho dos dados:
 
@@ -170,11 +185,11 @@ Ficou claro que a escolha depende do tamanho dos dados:
 
 Frase que resume bem a diferença entre modo eager e lazy: rodar em modo eager é como "cozinhar conforme vai fazendo", enquanto o modo lazy é como planejar a receita toda antes, com tudo já otimizado. No benchmark mostrado em aula (2,5 milhões de linhas), Polars (tanto lazy quanto eager) foi o mais rápido, seguido de PySpark, com Pandas bem atrás dos três.
 
-## Debugging
+**Debugging**
 
 Usamos o debugger do VSCode pra achar um bug intencional numa função de cálculo de média de idades — o erro estava relacionado a um valor vindo como string dentro de uma lista de números. Serviu pra treinar o hábito de rodar passo a passo e inspecionar variáveis em vez de só ler o código.
 
-## Classes
+**Classes**
 
 ```python
 class User:
@@ -193,7 +208,7 @@ Vimos também conceitos de orientação a objetos:
 - **Herança**: uma classe (`Humano`, `Cachorro`) herda atributos e métodos de uma classe base (`Mamifero`) usando `super().__init__()`.
 - **Polimorfismo**: classes diferentes que compartilham uma mesma base podem implementar o mesmo método (`speak()`) de formas diferentes.
 
-## Princípios de organização de projetos
+**Princípios de organização de projetos**
 
 - Código limpo e legível
 - Separação de funções (cada uma faz uma coisa só)
@@ -203,33 +218,26 @@ Vimos também conceitos de orientação a objetos:
 - Versionamento (Git)
 - Aproximação ao ambiente de produção
 
-## Exercícios que fez
+### Exercícios da Aula 2
 
-Separei os códigos por aula:
+Pasta [`aula 2`](./aula%202):
 
-**Aula 1** — pasta [`aula 1`](./aula%201)
-
-- [`pseudocodigo.py`](./aula%201/pseudocodigo.py) — verificador de idade a partir de pseudocódigo
-- [`loop_em_batches.py`](./aula%201/loop_em_batches.py) — percorrer uma lista em lotes (batches)
-- [`args_kwargs.py`](./aula%201/args_kwargs.py) — funções com `*args` e `**kwargs`
-- [`arg_order.py`](./aula%201/arg_order.py) — ordem de argumentos posicionais vs nomeados
-- [`utils.py`](./aula%201/utils.py) + [`moduled_file.py`](./aula%201/moduled_file.py) — separando uma função em módulo próprio e importando em outro arquivo
-- [`packages.py`](./aula%201/packages.py) + [`convidados.json`](./aula%201/convidados.json) — usando `os` e `json` pra gerar convites em `.txt` a partir de uma lista de convidados
-- [`pandas_practice.py`](./aula%201/pandas_practice.py) + [`order_details.csv`](./aula%201/order_details.csv) + [`public-orders (1).jsonl`](./aula%201/public-orders%20(1).jsonl) — ler CSV e JSONL, dar merge, filtrar e exportar resultado
-  > Rodar esse script gera um `customers_above_100.csv` na mesma pasta — é o output do exercício, não precisa subir ele pro Git (dá pra colocar no `.gitignore`).
-- [`classes.py`](./aula%201/classes.py) — herança com `Mamifero`, `Humano` e `Cachorro`
-- [`encapsulation.py`](./aula%201/encapsulation.py) — encapsulamento com `BankAccount`
-- [`polymorphism.py`](./aula%201/polymorphism.py) — polimorfismo com `Animal` e `Dog`
-
-**Aula 2** — pasta [`aula 2`](./aula%202)
-
+- [`utils.py`](./aula%202/utils.py) + [`moduled_file.py`](./aula%202/moduled_file.py) — separando uma função em módulo próprio e importando em outro arquivo
+- [`packages.py`](./aula%202/packages.py) + [`convidados.json`](./aula%202/convidados.json) — usando `os` e `json` pra gerar convites em `.txt` a partir de uma lista de convidados
 - [`s26_pratica_modulos.py`](./aula%202/s26_pratica_modulos.py) — usando `math`, `os` e `datetime`
 - [`s30_operacoes_inspecao_pandas.py`](./aula%202/s30_operacoes_inspecao_pandas.py) — criando um `DataFrame` a partir de um dicionário e filtrando por departamento
 - [`s32_ler_inspecionar.py`](./aula%202/s32_ler_inspecionar.py) — lendo [`teste.csv`](./aula%202/teste.csv) e inspecionando com `head()`, `shape`, `columns` e `info()`
 - [`s33_operacoes_pandas.py`](./aula%202/s33_operacoes_pandas.py) — `WHERE`, `GROUP BY`, `ORDER BY` e criação de coluna nova, tudo em Pandas
+- [`pandas_practice.py`](./aula%202/pandas_practice.py) + [`order_details.csv`](./aula%202/order_details.csv) + [`public-orders (1).jsonl`](./aula%202/public-orders%20(1).jsonl) — ler CSV e JSONL, dar merge, filtrar e exportar resultado
+  > Rodar esse script gera um `customers_above_100.csv` na mesma pasta — é o output do exercício, não precisa subir ele pro Git (dá pra colocar no `.gitignore`).
 - [`s38_debugger.py`](./aula%202/s38_debugger.py) — bug intencional pra praticar no debugger do VSCode
+- [`classes.py`](./aula%202/classes.py) — herança com `Mamifero`, `Humano` e `Cachorro`
+- [`encapsulation.py`](./aula%202/encapsulation.py) — encapsulamento com `BankAccount`
+- [`polymorphism.py`](./aula%202/polymorphism.py) — polimorfismo com `Animal` e `Dog`
 - [`s39_classes.py`](./aula%202/s39_classes.py) — classe `User` simples
 - [`s40_codigo_limpo.py`](./aula%202/s40_codigo_limpo.py) — mesma classe `User`, mas com senha "privada" e métodos separados (boas práticas)
+
+---
 
 ## Pra lembrar depois
 
@@ -239,3 +247,4 @@ Separei os códigos por aula:
 - Herança usa `super().__init__()` pra reaproveitar o `__init__` da classe base
 - Antes de codar, vale a pena escrever o pseudocódigo
 - Separar funções em módulos (`utils.py`) deixa o projeto mais organizado e testável
+- Dever de casa pendente: pesquisar sobre operator precedence
