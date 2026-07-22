@@ -253,8 +253,6 @@ Passo a passo que segui (igual anotei antes, na seção de Gems):
 2. Dei o nome "LIGHTHOUSE TA" pro Gem
 3. Colei o prompt no campo de instruções
 
-> Nota: seção ainda incompleta, vou atualizar depois que a aula fechar.
-
 ## Pra lembrar depois
 
 - GenAI é um subconjunto de Deep Learning, focado em **gerar** conteúdo novo, não só prever/classificar
