@@ -244,7 +244,7 @@ Passo a passo pra criar um (usado em aula pro Gem "Lighthouse TA"):
 
 ## Praticando: criando o Gem "Lighthouse TA"
 
-Comecei a montar esse Gem no Gemini como assistente de estudos pro Programa Lighthouse (ainda em construção, a aula sobre GenAI só termina amanhã, então vou refinar o prompt depois).
+Comecei a montar esse Gem no Gemini como assistente de estudos pro Programa Lighthouse.
 
 Prompt usado no campo de instruções: [`lighthouse-ta-prompt.txt`](./lighthouse-ta-prompt.txt)
 
