@@ -43,6 +43,8 @@ Como terminal, shell e Git funcionam por baixo dos panos, protocolos de acesso r
 **Módulo 6 — Introdução e utilização de GenAI**
 O que é Inteligência Artificial Generativa e como ela se diferencia da IA preditiva, o histórico da IA até os agentes de hoje, como GenAI potencializa (e não substitui) o profissional de dados, riscos como alucinação e privacidade, engenharia de prompts e a prática de criar um Gem no Gemini.
 
+**Módulo 7 — Fundamentos de Bancos de Dados e Cloud**
+
 ## Como esse repositório está organizado
 
 Cada README de módulo segue o mesmo formato: o que aprendi na aula, os conceitos explicados com minhas próprias palavras (e analogias que me ajudaram a fixar), os comandos/códigos testados, os exercícios feitos e uma seção final de "pra lembrar depois" com os pontos mais importantes pra revisar rápido.
