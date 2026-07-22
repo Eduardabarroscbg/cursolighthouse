@@ -21,7 +21,7 @@ Cada pasta desse repositório corresponde a um módulo do Ciclo Preparatório, c
 | [Módulo 4](./M%C3%B3dulo%204) | Introdução a Python | Duarte Junior — AI Engineer |
 | [Módulo 5](./M%C3%B3dulo%205) | Fundamentos de Controle de Versão | Luis Henrique (Luisinho) — Data Engineer Manager |
 | [Módulo 6](./M%C3%B3dulo%206) | Introdução e utilização de GenAI | Pedro Muracchini — Team Lead AI Engineer |
-| Módulo 7 | Fundamentos de Bancos de Dados e Cloud I | *(em breve)* |
+| [Módulo 7](./M%C3%B3dulo%207) |  Fundamentos de Bancos de Dados e Cloud | *(em breve)* |
 | Módulo 8 | *(em breve)* | *(em breve)* |
 | Módulo 9 | *(em breve)* | *(em breve)* |
 | Módulo 10 | *(em breve)* | *(em breve)* |
