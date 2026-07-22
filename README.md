@@ -6,7 +6,9 @@
 
 # Lighthouse - Anotações do Ciclo Preparatório
 
-Esse repositório reúne minhas anotações e exercícios das aulas do **Ciclo Preparatório do Lighthouse**.
+Esse repositório reúne minhas anotações e exercícios das aulas do **Ciclo Preparatório do Lighthouse**, o programa trainee de dados e IA da [Indicium](https://indicium.ai/). É a etapa aberta e gratuita antes do processo seletivo — aulas ao vivo sobre fundamentos de SQL, Python, lógica analítica, engenharia de dados, inteligência artificial e IA generativa, além de conteúdos de habilidades comportamentais.
+
+O Lighthouse existe há alguns anos e já formou mais de 250 profissionais pelo país, com boa parte deles efetivados depois na própria Indicium. A proposta é meio que resolver um problema real do mercado: tem muita vaga pra quem já é sênior em dados e IA, mas pouco caminho estruturado pra quem tá começando ou migrando de área. É basicamente o que eu tô tentando fazer agora.
 
 Cada pasta desse repositório corresponde a um módulo do Ciclo Preparatório, com as anotações que fiz durante a aula, os exercícios praticados e os arquivos de apoio que usei.
 
@@ -16,11 +18,11 @@ Cada pasta desse repositório corresponde a um módulo do Ciclo Preparatório, c
 
 | Módulo | Tema | Instrutor(a) |
 |---|---|---|
-| [Módulo 2](./modulo-2) | Introdução à Programação | Yasmim Lima — Data Engineer |
-| [Módulo 3](./modulo-3) | Introdução à SQL | Corina Bachmann — Team Lead Analytics Engineer |
-| [Módulo 4](./modulo-4) | Introdução a Python | Duarte Junior — AI Engineer |
-| [Módulo 5](./modulo-5) | Fundamentos de Controle de Versão | Luis Henrique (Luisinho) — Data Engineer Manager |
-| [Módulo 6](./modulo-6) | Introdução e utilização de GenAI | Pedro Muracchini — Team Lead AI Engineer |
+| [Módulo 2](./M%C3%B3dulo%202) | Introdução à Programação | Yasmim Lima — Data Engineer |
+| [Módulo 3](./M%C3%B3dulo%203) | Introdução à SQL | Corina Bachmann — Team Lead Analytics Engineer |
+| [Módulo 4](./M%C3%B3dulo%204) | Introdução a Python | Duarte Junior — AI Engineer |
+| [Módulo 5](./M%C3%B3dulo%205) | Fundamentos de Controle de Versão | Luis Henrique (Luisinho) — Data Engineer Manager |
+| [Módulo 6](./M%C3%B3dulo%206) | Introdução e utilização de GenAI | Pedro Muracchini — Team Lead AI Engineer |
 | Módulo 7 | Fundamentos de Bancos de Dados e Cloud I | *(em breve)* |
 | Módulo 8 | *(em breve)* | *(em breve)* |
 | Módulo 9 | *(em breve)* | *(em breve)* |
