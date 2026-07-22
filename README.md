@@ -6,9 +6,7 @@
 
 # Lighthouse - Anotações do Ciclo Preparatório
 
-Esse repositório reúne minhas anotações e exercícios das aulas do **Ciclo Preparatório do Lighthouse**, o programa trainee de dados e IA da [Indicium](https://indicium.ai/). É a etapa aberta e gratuita antes do processo seletivo — aulas ao vivo sobre fundamentos de SQL, Python, lógica analítica, engenharia de dados, inteligência artificial e IA generativa, além de conteúdos de habilidades comportamentais.
-
-O Lighthouse existe há alguns anos e já formou mais de 250 profissionais pelo país, com boa parte deles efetivados depois na própria Indicium. A proposta é meio que resolver um problema real do mercado: tem muita vaga pra quem já é sênior em dados e IA, mas pouco caminho estruturado pra quem tá começando ou migrando de área. É basicamente o que eu tô tentando fazer agora.
+Esse repositório reúne minhas anotações e exercícios das aulas do **Ciclo Preparatório do Lighthouse**.
 
 Cada pasta desse repositório corresponde a um módulo do Ciclo Preparatório, com as anotações que fiz durante a aula, os exercícios praticados e os arquivos de apoio que usei.
 
