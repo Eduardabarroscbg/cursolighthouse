@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-# Módulo 7 - Fundamentos de Bando de Dados e Cloud
-=======
->>>>>>> b50b28a (módulo 7)
 <div class="hero-image">
     <div class="frame">
         <img src="assets/brunoschaden.png" alt="Fundamentos da Computação em Nuvem">
     </div>
 </div>
 
-# Módulo Cloud - Fundamentos da Computação em Nuvem
+# Módulo 7 - Fundamentos da Computação em Nuvem
 Anotações da aula sobre os fundamentos de Cloud Computing: definição técnica, características essenciais, modelos de serviço e de implantação, e como isso se aplica no dia a dia de quem trabalha com dados. Instrutor: Bruno Schaden, Team Lead Analytics Engineer na Indicium.
 
 ## O que já era esperado como pré-requisito
