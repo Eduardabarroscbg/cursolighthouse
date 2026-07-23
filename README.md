@@ -21,7 +21,7 @@ Cada pasta desse repositório corresponde a um módulo do Ciclo Preparatório, c
 | [Módulo 4](./M%C3%B3dulo%204) | Introdução a Python | Duarte Junior — AI Engineer |
 | [Módulo 5](./M%C3%B3dulo%205) | Fundamentos de Controle de Versão | Luis Henrique (Luisinho) — Data Engineer Manager |
 | [Módulo 6](./M%C3%B3dulo%206) | Introdução e utilização de GenAI | Pedro Muracchini — Team Lead AI Engineer |
-| [Módulo 7](./M%C3%B3dulo%207) |  Fundamentos de Bancos de Dados e Cloud | *(em breve)* |
+| [Módulo 7](./M%C3%B3dulo%207) |  Fundamentos de Bancos de Dados e Cloud | Bruno Schaden — Team Lead Analytics Engineer |
 | Módulo 8 | *(em breve)* | *(em breve)* |
 | Módulo 9 | *(em breve)* | *(em breve)* |
 | Módulo 10 | *(em breve)* | *(em breve)* |
@@ -44,6 +44,7 @@ Como terminal, shell e Git funcionam por baixo dos panos, protocolos de acesso r
 O que é Inteligência Artificial Generativa e como ela se diferencia da IA preditiva, o histórico da IA até os agentes de hoje, como GenAI potencializa (e não substitui) o profissional de dados, riscos como alucinação e privacidade, engenharia de prompts e a prática de criar um Gem no Gemini.
 
 **Módulo 7 — Fundamentos de Bancos de Dados e Cloud**
+Fundamentos de cloud computing partindo da definição técnica do NIST: as 5 características essenciais (autosserviço sob demanda, elasticidade rápida etc.), os 3 modelos de serviço (IaaS, PaaS, SaaS) e os 4 modelos de implantação (pública, privada, híbrida, multicloud). Também vimos as vantagens operacionais da cloud (provisionamento, conectividade, controle de acesso, monitoramento, orquestração) e os conceitos práticos de conta, região, zona e VPC nos provedores.
 
 ## Como esse repositório está organizado
 
